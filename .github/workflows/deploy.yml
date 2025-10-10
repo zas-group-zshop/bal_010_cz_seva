@@ -1,0 +1,15 @@
+name: Deploy on push
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Pull to IIS folder
+        shell: pwsh
+        run: |
+          cd 'c:\_www\bal_010_cz_vista_resp\App_Firma'
+          git pull origin main
