@@ -16,4 +16,4 @@ jobs:
           $path = 'C:\_www\bal_010_cz_vista_resp\App_Firma'
           git config --global --add safe.directory $path
           git -C $path fetch --prune
-          git -C $path pull --ff-only origin main
+          git -C $path reset --hard origin/main
