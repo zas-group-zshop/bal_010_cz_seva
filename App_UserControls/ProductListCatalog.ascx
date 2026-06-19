@@ -21,6 +21,7 @@
                                 
                                 <span class="new-badge">
                                   <%# ZASutility.MyUtility.SafeEvalString(Container.DataItem, "odznaky_html") %>
+				  <%# ZASutility.MyUtility.SafeEvalString(Container.DataItem, "user_odznak") %>
                                   <%# ZASutility.MyUtility.GetSession("e_mail")=="jiriz@zasgroup.cz" ? ZASutility.MyUtility.SafeEvalString(Container.DataItem, "z_akce_nazev") : "" %>
                                 </span>
                                 <asp:PlaceHolder runat="server" visible="false">
