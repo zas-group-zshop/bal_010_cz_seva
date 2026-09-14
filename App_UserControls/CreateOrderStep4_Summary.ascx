@@ -339,7 +339,7 @@
                         </div>
 						<div class="cartButtons-desc">
                             <asp:CheckBox runat="server" ID="heureka_nesouhlas" ClientIDMode="Static" Text="&nbsp;Nesouhlasím se zasláním dotazníku spokojenosti v rámci programu Ověřeno zákazníky, který pomůže zlepšovat naše služby." Checked="false" />
-                            <asp:Literal ID="lNoOrderBottom" runat="server" />
+                            <asp:Literal ID="lNoHeurekaBottom" runat="server" />
                         </div>
                         <asp:Button ID="btnBackBottom" runat="server"
                             Text="<%$ Resources: Resource, StepBack %>" CssClass="button btn btn-default"
